@@ -358,7 +358,7 @@ public class TCPMonitor extends NotificationBroadcasterSupport
         // To discover registered servers..
         // 1) Define its URL
         JMXServiceURL url = new JMXServiceURL(String.format("service:jmx:rmi:///jndi/rmi://%s/jmxrmi", args[0]));
-        System.out.printf("service:jmx:rmi:///jndi/rmi://%s/jmxrmi\n", args[0]);
+
         // 2) With the URL create connection to JMX server
         JMXConnector jmxc = JMXConnectorFactory.connect(url, null);
 
