@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tcpservermonitor" />
+        <module name="tcpserver" />
+        <module name="tcpmonitor" />
+        <module name="tcpclient" />
       </profile>
     </annotationProcessing>
   </component>
