@@ -4,6 +4,8 @@ TCP Server monitored through JMX. This is a three tier application (server layer
 
 A video tutorial of this app can be seen at https://vimeo.com/465979865
 
+After cloning this repository go to it's root directory and build the application with <bold>"mvn clean install"</bold>
+
 Download tcpserver-1.0.0-SNAPSHOT-jar-with-dependencies.jar from: https://github.com/baosiek/tcpserver/raw/master/target/tcpserver-1.0.0-jar-with-dependencies.jar
 
 Or go to target directory and download from there
