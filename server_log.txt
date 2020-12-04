@@ -1,0 +1,11 @@
+[main] INFO ca.baosiek.server.TCPJMXServerExecutor - Setting number of threads to 8
+[main] INFO ca.baosiek.server.TCPJMXServerExecutor - Executor is starting [3] servers starting at port number [8000] at 2020-12-04T12:53:09.911858
+[pool-1-thread-2] INFO ca.baosiek.server.TCPJMXServer - Server Server_1 started running at port: 8001 at 2020-12-04T12:53:09.918011
+[pool-1-thread-3] INFO ca.baosiek.server.TCPJMXServer - Server Server_2 started running at port: 8002 at 2020-12-04T12:53:09.918708
+[pool-1-thread-1] INFO ca.baosiek.server.TCPJMXServer - Server Server_0 started running at port: 8000 at 2020-12-04T12:53:09.917537
+[Thread-0] INFO ca.baosiek.server.TCPJMXServer - New client socket accepted at channel /127.0.0.1 at 2020-12-04T12:53:14.575209
+[Thread-1] INFO ca.baosiek.server.TCPJMXServer - New client socket accepted at channel /127.0.0.1 at 2020-12-04T12:53:14.580459
+[Thread-2] INFO ca.baosiek.server.TCPJMXServer - New client socket accepted at channel /127.0.0.1 at 2020-12-04T12:53:14.583104
+[Thread-3] INFO ca.baosiek.server.TCPJMXServer - New client socket accepted at channel /127.0.0.1 at 2020-12-04T12:53:15.081026
+[Thread-4] INFO ca.baosiek.server.TCPJMXServer - New client socket accepted at channel /127.0.0.1 at 2020-12-04T12:53:15.082752
+[Thread-5] INFO ca.baosiek.server.TCPJMXServer - New client socket accepted at channel /127.0.0.1 at 2020-12-04T12:53:15.083578
