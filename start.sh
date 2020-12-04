@@ -58,10 +58,10 @@ SERVER_JAR=$PWD/tcpserver/target/tcpserver-1.0-SNAPSHOT.jar
 MONITOR_JAR=$PWD/tcpmonitor/target/tcpmonitor-1.0-SNAPSHOT.jar
 CLIENT_JAR=$PWD/tcpclient/target/tcpclient-1.0-SNAPSHOT.jar
 
-SERVER_LOG=server_log.txt
-MONITOR_LOG=monitor_log.txt
-CLIENT_LOG=client_log.txt
-JCONSOLE_LOG=jconsole_log.txt
+SERVER_LOG=server.log
+MONITOR_LOG=monitor.log
+CLIENT_LOG=client.log
+JCONSOLE_LOG=jconsole.log
 
 if [ ! -f "$SERVER_JAR" ]; then
 	echo "TCPServer jar file not found at:  $SERVER_JAR"

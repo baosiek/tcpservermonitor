@@ -1,3 +1,0 @@
-[pool-1-thread-1] INFO ba.baosiek.observable.TCPMonitor - Service at address [localhost:8000] is [UP] at [2020-12-04T12:53:15.081073]
-[pool-1-thread-1] INFO ba.baosiek.observable.TCPMonitor - Service at address [localhost:8001] is [UP] at [2020-12-04T12:53:15.082801]
-[pool-1-thread-1] INFO ba.baosiek.observable.TCPMonitor - Service at address [localhost:8002] is [UP] at [2020-12-04T12:53:15.083562]
