@@ -13,9 +13,9 @@ Client : your_home_directory/tcpclient/target/tcpclient-1.0-SNAPSHOT.jar
 
 A bash scrip start.sh starts everything that is necessary to playing with the application.
 To initialize three servers and two clients (Vancouver and Toronto) execute the following:
-**./start.sh -s 3 -p 8000 -b 0.5 -c "Vancouver Toronto"**
+**./start.sh -s 3 -p 8000 -b 0.5 -c "Vancouver Toronto"**, where:
 
-- First argument -s is the number of servers to start: 3 (in the example above)
-- Second -p is the initial port where those above servers will start listening: 8000 (in the example above. Servers will listen to ports 8000, 8001, 8002)
-- Third -b is the blocking coefficient to calculate the number of threads
-- Fourth -c is the name of the clients separated with space
+- First argument **-s** is the number of servers to be started: 3 (in the example above)
+- Second **-p** is the initial port where those above servers will start listening: 8000 (in the example above. Servers will listen to ports 8000, 8001, 8002)
+- Third **-b** is the blocking coefficient to calculate the number of threads
+- Fourth **-c** is the name of the clients separated with space
