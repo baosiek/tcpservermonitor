@@ -112,7 +112,7 @@ print_header "Starting TCPServiceMonitors Application"
 init_params
 
 # checking for required jars. Exits if any is not found.
-# IS_HOME is the root directory of this project
+# IS_HOME is the root directory of this project where this script is expected to be.
 IS_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 SERVER_JAR=$IS_HOME/tcpserver/target/tcpserver-1.0-SNAPSHOT.jar
 MONITOR_JAR=$IS_HOME/tcpmonitor/target/tcpmonitor-1.0-SNAPSHOT.jar
@@ -236,7 +236,6 @@ echo ""
 
 print_header "PROCESSES PID's"
 
-echo ""
 echo "Servers  : $SERVER_PID"
 echo "Monitors : $MONITOR_PID"
 echo "JConsole : $JCONSOLE_PID"

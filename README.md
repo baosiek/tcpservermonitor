@@ -4,14 +4,21 @@ TCP Server monitored through JMX. This is a three tier application (server layer
 
 A video tutorial of this app can be seen at https://vimeo.com/465979865
 
-After cloning this repository go to it's root directory and build the application with **mvn clean install"**.
+After cloning this repository go to it's root directory and build the application with maven.
+Use the following commnads:
+
+git clone https://github.com/baosiek/tcpservermonitor.git
+cd tcpservermonitor
+mvn clean install
 
 You will find the .jar files at:
 Server : your_home_directory/tcpserver/target/tcpserver-1.0-SNAPSHOT.jar
 Monitor: your_home_directory/tcpmonitor/target/tcpmonitor-1.0-SNAPSHOT.jar
 Client : your_home_directory/tcpclient/target/tcpclient-1.0-SNAPSHOT.jar
 
-A bash scrip start.sh starts everything that is necessary to playing with the application.
+A bash scrip named start.sh starts everything that is necessary to playing with this application.
+Before running it for the first time you may have to assign to it execute priviledge by typing:
+sudo chmod u+x start.sh 
 To initialize three servers and two clients (Vancouver and Toronto) execute the following:
 **./start.sh -s 3 -p 8000 -b 0.5 -c "Vancouver Toronto"**, where:
 
