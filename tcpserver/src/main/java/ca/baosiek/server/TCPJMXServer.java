@@ -22,8 +22,8 @@ public class TCPJMXServer implements Runnable, TCPJMXServerMXBean {
     private final AtomicInteger port; // port
     private final String serverName; // service name that facilitates service identification
     private static Logger LOG = LoggerFactory.getLogger(TCPJMXServer.class);
-    private boolean isSuspended;
-    private boolean isStopped;
+    private volatile boolean isSuspended;
+    private volatile boolean isStopped;
     private ServerSocket socket;
 
     /**
@@ -127,6 +127,8 @@ public class TCPJMXServer implements Runnable, TCPJMXServerMXBean {
         LOG.info(String.format("Server %s started running at port: %d at %s", this.serverName, this.port.get(),
                 LocalDateTime.now()));
 
+        ExecutorService exec = Executors.newFixedThreadPool(10);
+
         /*
         This loops keep being executed until this server is stopped.
          */
@@ -147,7 +149,8 @@ public class TCPJMXServer implements Runnable, TCPJMXServerMXBean {
                     Handles socket connections in a new thread
                      */
                     if (socket != null) {
-                        new TCPJMXClientHandler(socket.accept()).start();
+                        exec.execute(new TCPJMXClientHandler(socket.accept(), this.serverName));
+                        // new TCPJMXClientHandler(socket.accept(), this.serverName).start();
                     }
                 }
 
@@ -200,7 +203,7 @@ public class TCPJMXServer implements Runnable, TCPJMXServerMXBean {
 
         private Socket clientSocket;
 
-        public TCPJMXClientHandler(Socket socket) {
+        public TCPJMXClientHandler(Socket socket, String serverName) {
             this.clientSocket = socket;
         }
 
@@ -210,12 +213,12 @@ public class TCPJMXServer implements Runnable, TCPJMXServerMXBean {
         public void run() {
 
             try {
-                LOG.info(String.format("New client socket accepted at channel %s at %s",
+                LOG.info(String.format("%s. New client socket accepted at channel %s at %s", serverName,
                         this.clientSocket.getInetAddress(), LocalDateTime.now()));
 
                 OutputStream out = clientSocket.getOutputStream();
                 BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(out));
-                writer.append("pong!");
+                writer.append("UP");
                 writer.flush();
 
                 clientSocket.close();
