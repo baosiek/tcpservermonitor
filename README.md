@@ -7,9 +7,9 @@ A video tutorial of this app can be seen at https://vimeo.com/465979865
 After cloning this repository go to it's root directory and build the application with maven.
 Use the following commnads:
 
-. git clone https://github.com/baosiek/tcpservermonitor.git
-. cd tcpservermonitor
-. mvn clean install
+- git clone https://github.com/baosiek/tcpservermonitor.git
+- cd tcpservermonitor
+- mvn clean install
 
 You will find the .jar files at:
 Server : your_home_directory/tcpserver/target/tcpserver-1.0-SNAPSHOT.jar
