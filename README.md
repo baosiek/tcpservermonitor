@@ -12,9 +12,9 @@ Use the following commnads:
 - mvn clean install
 
 You will find the .jar files at:
-Server : your_home_directory/tcpserver/target/tcpserver-1.0-SNAPSHOT.jar
-Monitor: your_home_directory/tcpmonitor/target/tcpmonitor-1.0-SNAPSHOT.jar
-Client : your_home_directory/tcpclient/target/tcpclient-1.0-SNAPSHOT.jar
+- Server : your_home_directory/tcpserver/target/tcpserver-1.0-SNAPSHOT.jar
+- Monitor: your_home_directory/tcpmonitor/target/tcpmonitor-1.0-SNAPSHOT.jar
+- Client : your_home_directory/tcpclient/target/tcpclient-1.0-SNAPSHOT.jar
 
 A bash scrip named start.sh starts everything that is necessary to playing with this application.
 Before running it for the first time you may have to assign to it execute priviledge by typing:
