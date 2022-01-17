@@ -52,7 +52,7 @@ public class TCPMonitor extends NotificationBroadcasterSupport
         status = new AtomicReference<>("UNK");
         serviceName = new AtomicReference<>("");
         graceTimeDuration = new AtomicLong(0);
-        graceTimeFlag = new AtomicBoolean(Boolean.valueOf(false));
+        graceTimeFlag = new AtomicBoolean(Boolean.FALSE);
         isGraceTime = false;
         isNormalSchedule = true;
         notificationCounter = 0;

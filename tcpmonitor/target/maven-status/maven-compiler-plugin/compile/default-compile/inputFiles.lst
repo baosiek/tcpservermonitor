@@ -1,4 +1,4 @@
-/home/baosiek/Documents/java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/jmx/MonitorMXBean.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/utils/DateConverter.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/observable/TCPMonitor.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/observable/ITCPMonitorScheduler.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/observable/ITCPMonitorScheduler.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/jmx/MonitorMXBean.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/utils/DateConverter.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpmonitor/src/main/java/ba/baosiek/observable/TCPMonitor.java

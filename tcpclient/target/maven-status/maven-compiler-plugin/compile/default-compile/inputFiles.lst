@@ -1,6 +1,6 @@
-/home/baosiek/Documents/java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/view/CallerView.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/utils/DateConverter.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/model/ServiceModel.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/model/ServicesModel.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/controller/CallerController.java
-/home/baosiek/Documents/java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/model/TableModel.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/view/CallerView.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/controller/CallerController.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/model/TableModel.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/model/ServicesModel.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/utils/DateConverter.java
+/home/baosiek/Development/Java/tcpservermonitor/tcpclient/src/main/java/ca/baosiek/model/ServiceModel.java
