@@ -18,7 +18,7 @@ public class TCPJMXServerExecutor {
 
     public TCPJMXServerExecutor(int threads) {
 
-        serversExecutor = Executors.newFixedThreadPool(10);
+        serversExecutor = Executors.newFixedThreadPool(threads);
     }
 
     public void startServers(int numServers, int startPort) throws MalformedObjectNameException,
